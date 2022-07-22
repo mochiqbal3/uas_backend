@@ -31,4 +31,11 @@ router.get('/activity/:id', crudActivity.show);
 router.put('/activity/:id', crudActivity.update);
 router.delete('/activity/:id', crudActivity.destroy);
 
+// crud organization
+router.get('/orgnization', crudOrgnization.all);
+router.post('/orgnization', crudOrgnization.create);
+router.get('/orgnization/:id', crudOrgnization.show);
+router.put('/orgnization/:id', crudOrgnization.update);
+router.delete('/orgnization/:id', crudOrgnization.destroy);
+
 module.exports = router;
