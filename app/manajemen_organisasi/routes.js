@@ -24,4 +24,11 @@ router.get('/user/:id', crudUser.show);
 router.put('/user/:id', crudUser.update);
 router.delete('/user/:id', crudUser.destroy);
 
+// crud activity
+router.get('/activity', crudActivity.all);
+router.post('/activity', crudActivity.create);
+router.get('/activity/:id', crudActivity.show);
+router.put('/activity/:id', crudActivity.update);
+router.delete('/activity/:id', crudActivity.destroy);
+
 module.exports = router;
