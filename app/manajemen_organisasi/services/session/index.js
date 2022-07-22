@@ -99,7 +99,6 @@ const getCurrentUser = async (currentUser) => {
         birth_place: user.birth_place,
         address: user.address,
         email: user.phone_number,
-        role_id: user.role_id,
         created_date: user.created_date,
         updated_date: user.created_date,
       }

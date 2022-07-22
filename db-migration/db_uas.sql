@@ -1,13 +1,3 @@
-CREATE TABLE "roles" (
-  "id" VARCHAR(36) PRIMARY KEY,
-  "name" varchar(50),
-  "description" text,
-  "created_by" varchar(50),
-  "created_date" TIMESTAMPTZ,
-  "updated_by" varchar(50),
-  "updated_date" TIMESTAMPTZ
-);
-
 CREATE TABLE "users" (
   "id" VARCHAR(36) PRIMARY KEY,
   "username" varchar(50),
@@ -18,7 +8,6 @@ CREATE TABLE "users" (
   "birth_place" varchar(100),
   "address" text,
   "phone_number" varchar(20),
-  "role_id" VARCHAR(36),
   "created_date" TIMESTAMPTZ,
   "updated_date" TIMESTAMPTZ
 );
@@ -64,7 +53,6 @@ CREATE TABLE "role_activity" (
   "description" text
 );
 
-ALTER TABLE "users" ADD FOREIGN KEY ("role_id") REFERENCES "roles" ("id");
 
 ALTER TABLE "member_sub_organization" ADD FOREIGN KEY ("sub_organization_id") REFERENCES "sub_organizations" ("id");
 

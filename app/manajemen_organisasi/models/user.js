@@ -13,7 +13,6 @@ const User = psqlCon.sequelize.define('users', {
   birth_place: { type: Sequelize.STRING },
   address: { type: Sequelize.STRING },
   phone_number: { type: Sequelize.STRING },
-  role_id: { type: Sequelize.INTEGER },
 
   created_date: { type: Sequelize.DATE },
   updated_date: { type: Sequelize.DATE },
